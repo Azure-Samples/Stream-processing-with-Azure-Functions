@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+    <OutputType>Exe</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>function_app</RootNamespace>
+    <UserSecretsId>5a016cd2-546e-4943-9c5a-940d1be0d2f7</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore" Version="2.0.2" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.EventHubs" Version="6.5.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="2.0.5" />
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.OpenTelemetry" Version="1.1.0-preview6" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.12.0" />
+    <PackageReference Include="Azure.Monitor.OpenTelemetry.Exporter" Version="1.4.0" />
+  </ItemGroup>
+</Project>

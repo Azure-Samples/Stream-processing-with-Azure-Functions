@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: eventhubs-demo
+metadata:
+  template: eventhubs-demo@0.0.1-beta
+infra:
+  provider: bicep
+  path: infra
+services:
+  function-app:
+    project: ./function-app
+    host: function
+    language: dotnet
+hooks:
+  postprovision:
+    shell: sh
+    run: ./infra/scripts/postprovision.sh
+    interactive: true
+    continueOnError: false
+    windows:
+      shell: pwsh
+      run: ./infra/scripts/postprovision.ps1
+      interactive: true
+      continueOnError: false
