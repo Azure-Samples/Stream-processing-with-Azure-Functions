@@ -1,6 +1,26 @@
-# Event Hubs Triggered Function App Demo
+<!--
+---
+name: Vehicle Telemetry Stream Processing with Event Hubs and Azure Functions
+description: This sample showcases real-time event processing of vehicle telemetry using Azure Event Hubs and Azure Functions with Flex Consumption plan.
+page_type: sample
+products:
+- azure
+- azure-functions
+- azure-blob-storage
+- azure-virtual-network
+- entra-id
+- azure-event-hubs
+urlFragment: stream-processing-with-azure-functions
+languages:
+- csharp
+- bicep
+- azdeveloper
+---
+-->
 
-This demo showcases a real-time event processing solution using Azure Event Hubs and Azure Functions with Flex Consumption plan. The solution includes:
+# Vehicle Telemetry Stream Processing with Event Hubs and Azure Functions
+
+This sample showcases real-time event processing of vehicle telemetry using Azure Event Hubs and Azure Functions with Flex Consumption plan. The solution includes:
 
 - **Event Generator**: A high-performance Python application that simulates vehicle location events with extreme throughput capabilities
 - **Function App**: A .NET 8 isolated Azure Function with OpenTelemetry observability that processes events from Event Hubs
