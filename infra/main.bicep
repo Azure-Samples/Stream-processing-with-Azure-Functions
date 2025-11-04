@@ -21,7 +21,7 @@ metadata description = 'Creates Event Hubs triggered Azure Functions demo with F
     type: 'principalId'
   }
 })
-param userPrincipalId string
+param userPrincipalId string  = deployer().objectId
 
 var abbrs = loadJsonContent('./abbreviations.json')
 var resourceToken = toLower(uniqueString(subscription().id, environmentName, location))
